@@ -23,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height:40,
           ),
           
+          //Making Custom AppBar
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
@@ -70,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
+        // Making search bar 
           Container(
 
             child: TextField(
