@@ -14,4 +14,6 @@ List<Map> categories = [
   {'name' :'Horse', 'iconPath' : 'images/horse.png'},
   {'name' :'Parrot', 'iconPath' : 'images/parrot.png'},
   {'name' :'Rabbit', 'iconPath' : 'images/rabbit.png'},
+  {'name' :'Cat2', 'iconPath' : 'images/cat.png'},
+
 ];
