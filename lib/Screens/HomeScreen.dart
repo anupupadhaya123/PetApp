@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/Screens/screen2.dart';
 import 'package:pet_app/configuration/configuration.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -123,78 +124,88 @@ class _HomeScreenState extends State<HomeScreen> {
                 }
               ),
             ),
+
         // Making body of homepage using expanded, stack etc..
-            Container(
-              height: 240,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              child: Row(children: [
-                Expanded(
-                  child: Stack(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blueGrey,
-                            boxShadow: ListShadow,
-                            borderRadius: BorderRadius.circular(20)
-                          ),
-                          margin: EdgeInsets.only(top: 40),
-                          
-                      ),
-                      Align(
-                        child: Image.asset("images/pet-cat2.png"),
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    margin:EdgeInsets.only(top: 60, bottom: 20),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: ListShadow,
-                      borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Screen2()));
+              },
+              child: Container(
+                height: 240,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(children: [
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey,
+                              boxShadow: ListShadow,
+                              borderRadius: BorderRadius.circular(20)
+                            ),
+                            margin: EdgeInsets.only(top: 40),
+                            
+                        ),
+                        Align(
+                          child: Image.asset("images/pet-cat2.png"),
+                        ),
+                      ],
                     ),
                   ),
-                  ),
-              ],)
+                  Expanded(
+                    child: Container(
+                      margin:EdgeInsets.only(top: 60, bottom: 20),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: ListShadow,
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+                      ),
+                    ),
+                    ),
+                ],)
+              ),
             ),
         
-             Container(
-              height: 240,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              child: Row(children: [
-                Expanded(
-                  child: Stack(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                            color: Colors.orangeAccent,
-                            boxShadow: ListShadow,
-                            borderRadius: BorderRadius.circular(20)
-                          ),
-                          margin: EdgeInsets.only(top: 40),
-                          
-                      ),
-                      Align(
-                        child: Image.asset("images/pet-cat1.png"),
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    margin:EdgeInsets.only(top: 60, bottom: 20),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: ListShadow,
-                      borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+             GestureDetector(
+               onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Screen2()));
+              },
+               child: Container(
+                height: 240,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(children: [
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent,
+                              boxShadow: ListShadow,
+                              borderRadius: BorderRadius.circular(20)
+                            ),
+                            margin: EdgeInsets.only(top: 40),
+                            
+                        ),
+                        Align(
+                          child: Image.asset("images/pet-cat1.png"),
+                        ),
+                      ],
                     ),
                   ),
-                  ),
-              ],)
-            ),
-        
-        
+                  Expanded(
+                    child: Container(
+                      margin:EdgeInsets.only(top: 60, bottom: 20),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: ListShadow,
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+                      ),
+                    ),
+                    ),
+                ],)
+                         ),
+             ),
+            
           ] 
           ),
         )
