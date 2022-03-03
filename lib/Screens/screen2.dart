@@ -52,7 +52,10 @@ class Screen2 extends StatelessWidget {
             margin: EdgeInsets.only(top: 20),
             child: Align(
               alignment: Alignment.topCenter,
-              child: Image.asset("images/pet-cat2.png"),
+              child: Hero(
+                tag: 1,
+                child: Image.asset("images/pet-cat2.png")
+                ),
             ),
           ),
           Align(
@@ -99,7 +102,7 @@ class Screen2 extends StatelessWidget {
                           style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 20, 
                           ),
                         ),
                       ),
